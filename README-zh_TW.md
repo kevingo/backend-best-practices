@@ -24,7 +24,7 @@
   - [Staging environment](#staging-environment)
   - [Production environment](#production-environment)
 - [Bill of Materials](#bill-of-materials)
-- [Security](#security)
+- [資訊安全](#資訊安全)
   - [Credentials](#credentials)
   - [Secrets](#secrets)
   - [Login Throttling](#login-throttling)
@@ -166,7 +166,7 @@ This document must be included in every build artifact and shall contain the fol
 1. A list of failed tests or checks
 
 
-# Security
+# 資訊安全
 
 Be aware of possible security threats and problems. You should at least be familiar with the [OWASP Top 10 vulnerabilities](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project), and you should of monitor vulnerabilities in any third party software you use.
 
