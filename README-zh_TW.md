@@ -12,17 +12,17 @@
   - [General considerations](#general-considerations)
   - [SaaS, cloud-hosted or self-hosted?](#saas-cloud-hosted-or-self-hosted)
   - [Persistence solutions](#persistence-solutions)
-    - [RDBMS](#rdbms)
+    - [關聯式資料庫](#關聯式資料庫)
     - [NoSQL](#nosql)
       - [Document storage](#document-storage)
       - [Key-value store](#key-value-store)
       - [Graph database](#graph-database)
-- [Environments](#environments)
-  - [Local development environment](#local-development-environment)
-  - [Continuous integration environment](#continuous-integration-environment)
-  - [Testing environment](#testing-environment)
-  - [Staging environment](#staging-environment)
-  - [Production environment](#production-environment)
+- [環境](#環境)
+  - [本機開發環境](#本機開發環境)
+  - [持續整合環境](#持續整合環境)
+  - [測試環境](#測試環境)
+  - [準正式環境](#準正式環境)
+  - [正式環境](#正式環境)
 - [Bill of Materials](#bill-of-materials)
 - [資訊安全](#資訊安全)
   - [Credentials](#credentials)
@@ -97,7 +97,7 @@ An important choice regarding any solution is where to run it.
 
 This section aims to provide some guidance for selecting the type of persistence solution. The choice always needs to be tailored to the problem and none of these is a silver bullet, however.
 
-### RDBMS
+### 關聯式資料庫
 
 Pick a relational database system such as PostgreSQL when data and transaction integrity is a major concern or when lots of data analysis is required. The [ACID compliance](https://en.wikipedia.org/wiki/ACID), aggregation and transformation functions of the RDBMS will help.
 
@@ -125,17 +125,17 @@ Stores values, or sometimes groups of key-value pairs, accessible by key. Consid
 
 General graph databases store nodes and edges of a graph, providing index-free lookups of the neighbors of any node. For applications where graph-like queries like shortest path or diameter are crucial. Specialized graph databases also exist for storing e.g. [RDF triples](https://en.wikipedia.org/wiki/Resource_Description_Framework).
 
-# Environments
+# 環境
 
 This section describes the environments you should have, at a minimum. It might sound like a lot, [but there is a purpose for each one](http://futurice.com/blog/five-environments-you-cannot-develop-without).
 
-- [Local development](#local-development-environment)
+- [本機開發環境](#本機開發環境)
 - [Continuous integration](#continuous-integration-environment)
 - [Testing](#testing-environment)
 - [Staging](#staging-environment)
 - [Production](#production-environment)
 
-## Local development environment
+## 本機開發環境
 
 This is your local development environment. You probably should not have a shared external development environment. Instead, you should work to make it possible to run the entire system locally, by stubbing or mocking third-party services as needed.
 
