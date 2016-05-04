@@ -1,11 +1,11 @@
-Backend development best practices
+後端開發最佳實踐
 ==================================
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**目錄**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [N Commandments](#n-commandments)
+- [N 個戒律](#N 個戒律)
 - [General points on guidelines](#general-points-on-guidelines)
 - [Development environment setup in README.md](#development-environment-setup-in-readmemd)
 - [Data persistence](#data-persistence)
@@ -51,18 +51,18 @@ Backend development best practices
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# N Commandments
+# N 個戒律
 
-1. README.md in the root of the repo is the docs
-2. Single command run
-3. Single command deploy
-4. Repeatable and re-creatable builds
+1. 在版本庫的根目錄中的 README.md 代表了文件
+2. 透過單一指令來執行
+3. 透過單一指令來部署
+4. 可重複建立和執行的 build
 5. Build artifacts bundle a ["Bill of Materials"](#bill-of-materials)
-6. Use [UTC as the timezone](http://yellerapp.com/posts/2015-01-12-the-worst-server-setup-you-can-make.html) all around
+6. 無論如何使用 [UTC 作為時區](http://yellerapp.com/posts/2015-01-12-the-worst-server-setup-you-can-make.html)
 
-# General points on guidelines
+# 一般性的指導方針
 
-We do not want to limit ourselves to certain tech stacks or frameworks. Different problems require different solutions, and hence these guidelines are valid for various backend architectures.
+我並不想要限制自己在特定的技術架構或框架下. Different problems require different solutions, and hence these guidelines are valid for various backend architectures.
 
 # Development environment setup in README.md
 
