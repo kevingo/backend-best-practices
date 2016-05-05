@@ -23,7 +23,7 @@
   - [測試環境](#測試環境)
   - [準正式環境](#準正式環境)
   - [正式環境](#正式環境)
-- [Bill of Materials](#bill-of-materials)
+- [清單](#清單)
 - [資訊安全](#資訊安全)
   - [Credentials](#credentials)
   - [Secrets](#secrets)
