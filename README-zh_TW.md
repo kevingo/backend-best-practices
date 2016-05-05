@@ -62,7 +62,7 @@
 
 # 一般性的指導方針
 
-我並不想要限制自己在特定的技術架構或框架下. Different problems require different solutions, and hence these guidelines are valid for various backend architectures.
+我並不想要限制自己在特定的技術架構或框架下. 不同的問題需要不同的解法，因此這些方針在不同的場景下都是適用的。.
 
 # 在 README.md 中寫入開發環境所需要的設定
 
