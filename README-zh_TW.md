@@ -6,7 +6,7 @@
 **目錄**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
 - [N 個戒律](#N 個戒律)
-- [General points on guidelines](#general-points-on-guidelines)
+- [一般性的指導方針](#一般性的指導方針)
 - [Development environment setup in README.md](#development-environment-setup-in-readmemd)
 - [Data persistence](#data-persistence)
   - [General considerations](#general-considerations)
