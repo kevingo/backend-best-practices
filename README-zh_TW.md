@@ -7,9 +7,9 @@
 
 - [N 個戒律](#N 個戒律)
 - [一般性的指導方針](#一般性的指導方針)
-- [Development environment setup in README.md](#development-environment-setup-in-readmemd)
-- [Data persistence](#data-persistence)
-  - [General considerations](#general-considerations)
+- [在 README.md 中寫入開發環境所需要的設定](#在 README.md 中寫入開發環境所需要的設定)
+- [資料持久保存](#資料持久保存)
+  - [一般性的考量](#一般性的考量)
   - [SaaS, cloud-hosted or self-hosted?](#saas-cloud-hosted-or-self-hosted)
   - [Persistence solutions](#persistence-solutions)
     - [關聯式資料庫](#關聯式資料庫)
@@ -64,17 +64,17 @@
 
 我並不想要限制自己在特定的技術架構或框架下. Different problems require different solutions, and hence these guidelines are valid for various backend architectures.
 
-# Development environment setup in README.md
+# 在 README.md 中寫入開發環境所需要的設定
 
-Document all the parts of the development/server environment. Strive to use the same setup and versions on all environments, starting from developer laptops, and ending with the actual production environment. This includes the database, application server, proxy server (nginx, Apache, ...), SDK version(s), gems/libraries/modules.
+文件化所有開發和伺服器所需要的環境. Strive to use the same setup and versions on all environments, starting from developer laptops, and ending with the actual production environment. 這當中包含了資料庫、應用伺服器、代理伺服器 (nginx, Apache, ...), SDK 的版本, gems/libraries/modules.
 
 Automate the setup process as much as possible. For example, [Docker Compose](https://docs.docker.com/compose/) could be used both in production and development to set up a complete environment, where [Dockerfiles](https://docs.docker.com/articles/dockerfile_best-practices/) fetch all parts of the software, and contain the necessary scripting to setup the environment and all the parts of it. Consider using archived copies of the installers, in case upstream packages later become unavailable. A minimum precaution is to keep a SHA-1 checksums of the packages, and to make sure that the checksum matches when the packages are installed.
 
-Consider storing any relevant parts of the development environment and its dependencies in some persistent storage. If the environment can be built using Docker, one possible way to do this is to use [docker export](http://docs.docker.com/reference/commandline/cli/#export).
+Consider storing any relevant parts of the development environment and its dependencies in some persistent storage. 如果開發環境可以使用 Docker 來建置，, 一個可行的方法就是使用 [docker export](http://docs.docker.com/reference/commandline/cli/#export).
 
-# Data persistence
+# 資料持久保存
 
-## General considerations
+## 一般性的考量
 
 Independent of the persistence solution your project uses, there are general considerations that you should follow:
 
