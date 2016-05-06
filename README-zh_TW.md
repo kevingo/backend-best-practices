@@ -127,31 +127,31 @@ General graph databases store nodes and edges of a graph, providing index-free l
 
 # 環境
 
-This section describes the environments you should have, at a minimum. It might sound like a lot, [but there is a purpose for each one](http://futurice.com/blog/five-environments-you-cannot-develop-without).
+本章節描述建置軟體應該擁有的環境，看起來很多，[但每個都有其目的](http://futurice.com/blog/five-environments-you-cannot-develop-without).
 
 - [本機開發環境](#本機開發環境)
-- [Continuous integration](#continuous-integration-environment)
-- [Testing](#testing-environment)
-- [Staging](#staging-environment)
-- [Production](#production-environment)
+- [持續整合](#持續整合環境)
+- [測試環境](#測試環境)
+- [準正式環境](#準正式環境)
+- [正式環境](#正式環境)
 
 ## 本機開發環境
 
-This is your local development environment. You probably should not have a shared external development environment. Instead, you should work to make it possible to run the entire system locally, by stubbing or mocking third-party services as needed.
+這是你的本機開發環境. 你也許不會有一個外部共享的開發環境. 相反的, 你應該要想辦法藉由模擬外部套件或服務，讓整套系統可以在本機上順利運作。
 
-## Continuous integration environment
+## 持續整合環境
 
-CI is (among other things) for making sure that your software builds and automated tests pass after every change.
+持續整合讓你的軟體確保跑過所有的測試。
 
-## Testing environment
+## 測試環境
 
 This is a shared environment where code is deployed to as often as possible, preferably every time code is committed to the mainline branch. It can be broken from time to time, especially in the active development phase. It is an important canary environment and is as similar to production as possible. Any external integrations are set up to use staging-level versions of other services.
 
-## Staging environment
+## 準正式環境
 
 Staging is set up exactly like production. No changes to the production environment happen before having been rehearsed here first. Any mysterious production issues can be debugged here.
 
-## Production environment
+## 正式環境
 
 The big iron. Logged, monitored, cleaned up periodically, squared away and secured.
 
